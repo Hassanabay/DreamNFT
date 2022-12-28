@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    font-family:'Poppins', sans-serif;
+    background-color: #252729;
+    color: white;
+    padding: 0px 100px;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    align-items: center;
+}
+nav ul li{
+    transition: all 0.5s;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+nav ul li:hover{
+    color: #00ABB3;
+    cursor: pointer;
+    text-shadow: 2px 2px 30px #00ABB3;
+    transition: all 0.5s;
+}
+nav h1{
+    font-size: 35px;
+}
+nav button{
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 60px;
+    color: white;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+/*Slogan*/
+.hero{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.slogan{
+width:700px ;
+border: 1px solid;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.slogan span{
+    color: #00ABB3;
+}
+.slogan h1{
+    font-size: 90px;
+    line-height: 90px;
+}
+.desc{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+.desc a{
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 20px;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+.desc a:hover{
+    background-image: linear-gradient(43deg,  #FFCC70 0%, #C850C0 46%, #4158D0 100%);
+
+}
+.hero img{
+    width: 600px;
+    height: 450px;
+}
+
+/*Main*/
+
+.markalar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+@media (max-width:1500px){
+    .markalar{
+        margin-top: 200px;
+    }
+}
+/*drop box*/
+
+.drops{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.drops h1{
+    font-size: 40px;
+    }
+.drops ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+.drops ul li{
+    background-color: gray;
+    border-radius: 40px;
+    padding: 10px;
+
+} 
+
+/*kort*/
+.cards{
+    max-width: 900px;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+    }
+.card{
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 20px;
+    background-color: white;
+    color: #252729;
+    border-radius: 10px;
+}
+.cards h3{}
+
+.card img{
+    width: 100%;
+}
+.value{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+.left p{
+    color: #00ABB3;
+}
+.left img{
+    width: 20px;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.time{
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+
+}
+.time p{
+    background-color: rgb(207, 205, 205);
+    color: #00ABB3;
+    padding: 6px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.time button{
+    background-color: white;
+    border: none;
+    color: #00ABB3;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.5s;
+}
+.time button:hover{
+    background-color: #00ABB3;
+    color: aliceblue;
+    transition: all 0.5s;
+}
+.info{
+    margin: -120px;
+    width:120vw;
+    min-height: 150px;
+    background-color:#00ABB3;
+    margin-top: 200px;
+    font-size: 136px;
+    line-height: 146px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 25;
+    display: flex;
+    font-weight: 800;
+    white-space: nowrap;
+    transform: rotate(-6deg);
+    text-shadow: 2px 2px 40px white;
+}
+.info1{
+    margin-top: 300px;
+    min-width: 600px;
+    min-height: 600px;
+    
+    
+    
+}
+.info2{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.info3{
+    max-width: 500px;
+    min-width: 300px;
+    min-height: 200px;
+    background-color: rgb(90, 0, 128);
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+.info1 h1{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.infotext img{
+    width: 35px;
+}
+footer{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-bottom: 100px;
+}
+footer p{
+    text-align: justify;
+    
+}
